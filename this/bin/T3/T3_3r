@@ -1,0 +1,15 @@
+#T3_3r
+#.text
+53 02 00 00 f4 03 04 04 b7 c2 00 00 37 54 fe ff 03 02 02 00 47 02 01 00 f7 03 e8 03 eb 03 
+
+#RedBr.	Sim	Sek	Vre	Vid	Vel	Atr
+0		0	0	1	0	4
+1	.text	1	3e8	1	1e	2
+2	obrada_ispis	1	3e8	0	0	4
+3	loop_begin	1	3e8	1	0	4
+4	loop_end	1	404	1	0	4
+
+#rel.text
+#Off	Tip	Vre	
+6	0	1	
+1a	0	1	

@@ -1,0 +1,15 @@
+#T3_2r
+#.text
+b7 4a bb 02 01 00 87 02 02 00 83 42 4f 02 02 00 53 02 00 00 f4 03 2c 02 f7 c2 00 00 37 d3 00 00 37 66 00 00 b7 5e 00 00 03 02 02 00 87 02 02 00 47 02 01 00 f7 03 04 02 eb 03 
+
+#RedBr.	Sim	Sek	Vre	Vid	Vel	Atr
+0		0	0	1	0	4
+1	.text	1	1f4	1	3a	2
+2	obrada_zamena	1	1f4	0	0	4
+3	loop_begin	1	204	1	0	4
+4	loop_end	1	22c	1	0	4
+
+#rel.text
+#Off	Tip	Vre	
+16	0	1	
+36	0	1	

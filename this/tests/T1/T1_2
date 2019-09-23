@@ -1,0 +1,27 @@
+	.text
+	.global obrada
+
+obrada:
+	pushal r0
+	pushal r1
+
+	cmpal r1, 0
+	jmpeq &end
+
+	pushal r0
+	pushal r1
+
+	addal r0, 2
+	subal r1, 1
+	callal &obrada
+
+	popal r1
+	popal r0
+
+	moval r0, r0[0]
+	moval *65534, r0
+
+end:	popal r1
+	popal r0
+	retal
+.end

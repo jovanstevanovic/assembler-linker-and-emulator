@@ -1,0 +1,14 @@
+#T1_2r
+#.text
+27 02 67 02 53 02 00 00 f4 03 1c 02 27 02 67 02 03 02 02 00 47 02 01 00 2f 00 f4 01 6b 02 2b 02 37 c2 00 00 37 44 fe ff 6b 02 2b 02 eb 03 
+
+#RedBr.	Sim	Sek	Vre	Vid	Vel	Atr
+0		0	0	1	0	4
+1	.text	1	1f4	1	2e	2
+2	obrada	1	1f4	0	0	4
+3	end	1	21c	1	0	4
+
+#rel.text
+#Off	Tip	Vre	
+a	0	1	
+1a	0	2	

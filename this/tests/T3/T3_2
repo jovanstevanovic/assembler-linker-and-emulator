@@ -1,0 +1,27 @@
+	.text
+	.global obrada_zamena
+
+obrada_zamena:
+	moval r2, r1
+	shlal r2, 1
+	subal r2, 2
+	addal r2, r0
+	dival r1, 2
+
+loop_begin:	
+	cmpal r1, 0
+	jmpeq &loop_end
+
+	moval r3, r0[0]
+	moval r4, r2[0]
+	moval r0[0], r4
+	moval r2[0], r3
+
+	addal r0, 2
+	subal r2, 2
+	subal r1, 1
+	jmpal &loop_begin
+
+loop_end:
+	retal
+.end

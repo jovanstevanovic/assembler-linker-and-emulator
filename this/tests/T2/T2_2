@@ -1,0 +1,23 @@
+	.data
+x:	.word 0
+
+	.text
+	.global obrada
+
+obrada:
+loop_begin:
+	cmpal r1, 0
+	jmpeq &loop_end
+	moval r2, r0[0]
+
+	addal x, r2
+	addal r0, 2
+
+	subal r1, 1
+	jmpal &loop_begin
+
+loop_end:
+	moval r0, x
+	moval *65534, r0
+	retal
+.end

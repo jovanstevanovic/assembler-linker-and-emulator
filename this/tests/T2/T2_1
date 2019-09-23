@@ -1,0 +1,29 @@
+	.data
+array:
+	.skip 40
+
+	.text
+	.extern obrada
+	.global _start
+_start:
+	moval r0, 0
+	moval r1, 1
+	moval r2, 20
+
+loop_begin:	
+	cmpal r2, 0
+	jmpeq &loop_end
+
+	moval r0[array], r1
+	addal r0, 2
+	addal r1, 1
+	subal r2, 1
+	jmpal &loop_begin
+
+loop_end:
+	moval r0, &array
+	moval r1, 20
+
+	callal &obrada
+	jmpal 0
+.end
